@@ -18,7 +18,7 @@
             <h1 class="header__title">Добро пожаловать на мой сайт !</h1>
             <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
                     class="header__text--span">поехали</span> и <span class="header__text--span">приступай</span></p>
-            <button class="header__button">Поехали!</button>
+            <button class="header__button button">Поехали!</button>
         </header>
     </div>
     <ul class="product-box center">
@@ -26,6 +26,27 @@
         <li><a href="#" class="product">Игра 2</a></li>
         <li><a href="#" class="product">Игра 3</a></li>
     </ul>
+    <section class="gamesSection center">
+        <div class="game">
+            <h2 class="game__title">Времена года!</h2>
+            <p class="game__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени
+                года он относится</p>
+            <button class="button" onclick="chooseSeason();">Играть!</button>
+        </div>
+        <img class="game__img" src="img/gameyear.png" alt="foto">
+    </section>
+    <section class="gamesSection center">
+        <img class="game__img" src="img/gameremember.png" foto">
+        <div class="game">
+            <h2 class="game__title">Запомни слова</h2>
+            <p class="game__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <button class="button" onclick="rememberWord();">Играть!</button>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>

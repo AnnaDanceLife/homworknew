@@ -3,11 +3,11 @@
 const numbs = [1, 5, 4, 10, 0, 3];
 
 for (let element = 0; element < numbs.length; element++) {
+    console.log(numbs[element]);
+
     if (numbs[element] == 10) {
-        console.log(numbs[element]);
         break;
     }
-    console.log(numbs[element]);
 }
 
 // Задание 2
@@ -20,7 +20,7 @@ console.log(numbers.indexOf(4));
 
 const arr = [1, 3, 5, 10, 20];
 
-console.log(arr.join([' ']));
+console.log(arr.join(' '));
 
 // Задание 4
 
@@ -77,22 +77,18 @@ console.log(String(arrOfString));
 
 // Задание 9
 
-let multiArray = [[1, 2, 3,], [4, 5, 6]];
+const multiArray = [[1, 2, 3,], [4, 5, 6]];
+const flatMultiArray = multiArray.flat();
 
-multiArray = multiArray.join([',']);
-console.log(multiArray);
+console.log(flatMultiArray);
 
 // Задание 10
 
-function funcSum(...arbitArr) {
-    let sum = 0;
-    for (let item of arbitArr) {
-        sum += item;
-    }
-    return sum;
-}
+const ar = [1, 5, 2, 8, 10, 3, 7];
 
-console.log(funcSum(1, 5, 2, 8, 10, 3, 7));
+for (let a = 0; a < ar.length - 1; a++) {
+    console.log(ar[a] + ar[a + 1]);
+}
 
 // Задание 11
 
@@ -118,3 +114,35 @@ const integer = [15, 48, 98, 45, 13, 2, 100];
 let negativeNum = integer.map(item => (-item));
 
 console.log(negativeNum);
+
+// Задание 14
+
+const arrRandom = [];
+
+for (let r = 0; r < 10; r++) {
+    arrRandom.push(Math.round(Math.random() * 10));
+}
+console.log(arrRandom);
+
+let arrEvenNumbers = arrRandom.filter(item => (item % 2 === 0));
+console.log(arrEvenNumbers);
+
+// Задание 15
+
+const arRandom = [];
+
+for (let b = 0; b < 6; b++) {
+    arRandom.push(Math.round(Math.random() * 10) + 1);
+}
+console.log(arRandom);
+
+function average() {
+    let sum = 0;
+    for (let item of arRandom) {
+        sum += item;
+    }
+    let averageResult = sum /arRandom.length;
+    console.log(averageResult);
+
+}
+average(arRandom);

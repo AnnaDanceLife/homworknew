@@ -25,14 +25,43 @@
             font-size: 14px;
             line-height: 22px;
         }
+    }
 
-        &__button {
-            margin-top: 32px;
-        }
+    .button {
+        margin-top: 32px;
     }
 
     li {
         padding-left: 14px;
         grid-column: -1/1;
+    }
+
+    .gameSeasons {
+        gap: 64px;
+    }
+
+    .game {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 51px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            width: 343px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__img {
+            padding-bottom: 85px;
+            width: 344px;
+            height: 236px;
+        }
     }
 }

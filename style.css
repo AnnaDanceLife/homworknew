@@ -48,23 +48,7 @@ a {
   font-weight: 700;
 }
 .header__button {
-  width: 234px;
-  height: 48px;
-  background: #9C0332;
-  border-radius: 30px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #FFFFFF;
-  outline: none;
-  border: none;
   margin-top: 44px;
-  transition: all 0.3s;
-}
-.header__button:hover {
-  background: #EB443F;
-  transform: scale(1.03);
 }
 
 .product-box {
@@ -111,6 +95,57 @@ li:hover {
   transform: scale(1.03);
 }
 
+.gamesSection {
+  height: 800px;
+  background: #000915;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  align-items: center;
+}
+
+.game {
+  width: 584px;
+}
+.game__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+.game__img {
+  width: 485px;
+  height: 333px;
+}
+
+.button {
+  margin-top: 32px;
+  width: 234px;
+  height: 48px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+}
+.button:hover {
+  background: #EB443F;
+  transform: scale(1.03);
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -135,11 +170,35 @@ li:hover {
     font-size: 14px;
     line-height: 22px;
   }
-  .header__button {
+  .button {
     margin-top: 32px;
   }
   li {
     padding-left: 14px;
     grid-column: -1/1;
+  }
+  .gameSeasons {
+    gap: 64px;
+  }
+  .game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 51px;
+  }
+  .game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game__text {
+    width: 343px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game__img {
+    padding-bottom: 85px;
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
